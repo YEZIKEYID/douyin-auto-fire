@@ -9,7 +9,7 @@ on:
         default: true
   # 按雅加达时间设置：前两项依次是分钟、小时。
   schedule:
-    - cron: "25 22 * * *"
+    - cron: "0 23 * * *"
       timezone: "Asia/Jakarta"
 
 concurrency:
