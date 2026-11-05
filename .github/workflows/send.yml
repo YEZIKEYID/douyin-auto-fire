@@ -7,9 +7,10 @@ on:
         description: Only verify login and friends without sending
         type: boolean
         default: true
-  # UTC 15:25 = Asia/Jakarta 22:25
+  # 按雅加达时间设置：前两项依次是分钟、小时。
   schedule:
-    - cron: "25 15 * * *"
+    - cron: "25 22 * * *"
+      timezone: "Asia/Jakarta"
 
 concurrency:
   group: douyin-daily-sender
